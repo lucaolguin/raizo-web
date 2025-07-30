@@ -6,7 +6,7 @@ import {
   FaPhone, 
   FaEnvelope 
 } from "react-icons/fa";
-import './Footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
           <h3 className="footer-title">Contacto</h3>
           <ul className="contact-list">
             <li>
-              <FaMapMarkerAlt /> Dirección: Calle Falsa 123, Córdoba
+              <FaMapMarkerAlt /> Dirección: La Calera, Córdoba
             </li>
             <li>
               <FaPhone /> Teléfono: +54 9 351 621-8897
