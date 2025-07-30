@@ -1,8 +1,8 @@
 // src/pages/Contacto.jsx
 const Contacto = () => {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1 style={{ color: '#476042' }}>Contacto</h1>
+    <div className="form-control">
+      <h1>Contacto</h1>
       <form style={{ maxWidth: '500px', margin: '0 auto' }}>
         <div style={{ marginBottom: '1rem' }}>
           <label style={{ display: 'block', marginBottom: '0.5rem' }}>Nombre:</label>

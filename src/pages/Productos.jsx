@@ -7,8 +7,8 @@ const Productos = () => {
   ];
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1 style={{ color: '#476042' }}>Nuestros Productos</h1>
+    <div className="form-control">
+      <h1>Nuestros Productos</h1>
       <div style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 

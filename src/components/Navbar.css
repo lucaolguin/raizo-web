@@ -4,12 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  color: #7B5A3C;
-  font-weight: bold;
-  font-size: 1.5rem;
+  height: 85px;
 }
 
 .nav-links {
@@ -21,5 +16,10 @@
 .nav-links a {
   text-decoration: none;
   color: #2D3123;
-  font-weight: 500;
+  font-weight: 800;
+}
+
+.nav-links a:hover {
+  color: #7B5A3C !important;
+  transition: color 0.3s;
 }
