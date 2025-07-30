@@ -3,7 +3,7 @@ const Contacto = () => {
   return (
     <div className="form-control">
       <h1>Contacto</h1>
-      <form style={{ maxWidth: '500px', margin: '0 auto' }}>
+      <form style={{ maxWidth: '600px', margin: '0 auto' }}>
         <div style={{ marginBottom: '1rem' }}>
           <label style={{ display: 'block', marginBottom: '0.5rem' }}>Nombre:</label>
           <input type="text" style={{ width: '100%', padding: '0.5rem' }} />

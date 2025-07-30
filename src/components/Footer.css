@@ -1,11 +1,9 @@
-/* Agrega estas reglas al final de tu index.css */
 
-/* Estilos generales del Footer */
 .footer {
   background-color: #2D3123;
-  color: #EFEFEF;
-  padding: 0;
-  width: 100%;
+  color: #E6DBCF;
+  padding: 0.2em;
+  width: 100%;;
 }
 
 .footer-container {
@@ -37,7 +35,7 @@
 }
 
 .social-links a {
-  color: #EFEFEF !important;
+  color: #E6DBCF !important;
   transition: color 0.3s;
 }
 
@@ -70,30 +68,30 @@
 }
 
 .footer-links a {
-  color: #EFEFEF;
+  color: #E6DBCF;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #E6DBCF;
+  color: #7B5A3C;
 }
 
 /* Copyright */
 .copyright {
   text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   border-top: 1px solid #7B5A3C;
 }
 
 /* Efectos hover para íconos */
 .social-icon {
-  transition: transform 0.3s;
+  transition: transform 0.4s;
 }
 
 .social-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 @media (max-width: 768px) {

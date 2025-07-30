@@ -36,7 +36,7 @@ const Footer = () => {
               <FaMapMarkerAlt /> Dirección: Calle Falsa 123, Córdoba
             </li>
             <li>
-              <FaPhone /> Teléfono: +54 9 351 123 4567
+              <FaPhone /> Teléfono: +54 9 351 621-8897
             </li>
             <li>
               <FaEnvelope /> Email: info@raizo.com
