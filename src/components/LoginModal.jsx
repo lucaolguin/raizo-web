@@ -22,10 +22,20 @@ function LoginModal({ onClose }) {
   };
 
   return ReactDOM.createPortal(
-    <div className="modal-overlay" onClick={onClose}>
+    <div className="modal-overlay" >
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>&times;</button>
         <h2>Iniciar Sesión</h2>
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" /><br />
+
+          <label htmlFor="password">Contraseña:</label>
+          <input type="password" id="password" /><br />
+
+          <button className="btn-register" onClick={() => console.log('Registrar')}>Registrar</button>
+          <button className="btn-login" onClick={() => console.log('Iniciar sesión')}>Iniciar Sesión</button>
+        </div>
         <div className="login-buttons">
           <button className="btn-google" onClick={() => handleLogin(googleProvider)}>
             <FaGoogle /> Continuar con Google

@@ -29,7 +29,7 @@ function CartSidebar({ onClose }) {
         )}
 
         <div className="cart-footer">
-          <strong>Total: ${total}</strong>
+          <strong>Total: ${total}</strong><br />
           <button onClick={clearCart} className="clear-button">Vaciar carrito</button>
         </div>
       </div>

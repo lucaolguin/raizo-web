@@ -1,0 +1,73 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #EFEFEF;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #2D3123;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #2D3123;
+}
+
+.modal-content input {
+  width: 95.5%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-login {
+  background-color: #476042;
+  color: #EFEFEF;
+  margin-bottom: 20px;
+}
+
+.btn-login:hover {
+  background-color: #3a5036;
+}
+
+.btn-register {
+  background-color: #7B5A3C;
+  color: #EFEFEF;
+}
+
+.btn-register:hover {
+  background-color: #62442d;
+}

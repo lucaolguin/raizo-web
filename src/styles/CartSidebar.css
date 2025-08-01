@@ -1,0 +1,67 @@
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fondo semitransparente */
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.sidebar-content {
+  color: #2D3123;
+  background-color: #ccc;
+  width: 320px;
+  max-width: 90%;
+  height: 96%;
+  padding: 1.5rem;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #2D3123;
+  cursor: pointer;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #7B5A3C;
+  padding-bottom: 0.5rem;
+}
+
+.cart-item button {
+  background: none;
+  border: none;
+  color: #7B5A3C;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-footer {
+    color: #2D3123;
+  border-top: 1px solid #7B5A3C;
+  padding-top: 1rem;
+  margin-top: auto;
+}

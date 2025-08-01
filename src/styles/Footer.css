@@ -2,15 +2,16 @@
 .footer {
   background-color: #2D3123;
   color: #E6DBCF;
-  padding: 0.2em;
-  width: 100%;;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-size: 0.85rem;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
 }
