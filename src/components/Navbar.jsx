@@ -1,3 +1,4 @@
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/logo.png';
@@ -7,7 +8,23 @@ import {
   FaShoppingCart
 } from "react-icons/fa";
 
+import { useCarrito } from '../context/CarritoContext';
+import SearchModal from './SearchModal';
+import LoginModal from './LoginModal';
+import CartSidebar from './CartSidebar'
+
 function Navbar() {
+
+  const [showSearch, setShowSearch] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
+  const [showCart, setShowCart] = useState(false);
+
+  const { carrito } = useCarrito();
+
+  const toggleSearch = () => setShowSearch(prev => !prev);
+  const toggleLogin = () => setShowLogin(prev => !prev);
+  const toggleCart = () => setShowCart(prev => !prev);
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -48,11 +65,29 @@ function Navbar() {
       </ul>
 
       <div className="navbar-right">
-        <button className="icon-button"><FaSearch /></button>
-        
-        <button className="icon-button"><FaUser /></button>
-        <button className="icon-button"><FaShoppingCart /></button>
+        {/* Botón Búsqueda */}
+        <button className="icon-button" onClick={toggleSearch} aria-label="Buscar">
+          <FaSearch />
+        </button>
+
+        {/* Botón Perfil */}
+        <button className="icon-button" onClick={toggleLogin} aria-label="Perfil">
+          <FaUser />
+        </button>
+
+        {/* Botón Carrito (muestra cantidad) */}
+        <button className="icon-button" onClick={toggleCart} aria-label="Carrito">
+          <FaShoppingCart />
+          {carrito.length > 0 && (
+            <span className="badge">{carrito.length}</span>
+          )}
+        </button>
       </div>
+
+      {/* Modales y Sidebar */}
+      {showSearch && <SearchModal onClose={toggleSearch} />}
+      {showLogin && <LoginModal onClose={toggleLogin} />}
+      {showCart && <CartSidebar onClose={toggleCart} />}
     </nav>
   );
 }
